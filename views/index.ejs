@@ -1,0 +1,7 @@
+<%- include('partials/header.ejs'); -%>
+<% if (locals.books) { %>
+  <% books.forEach((book) => { %>
+    <%- include('partials/bookOverview.ejs', { book }); -%>
+  <% }) %>
+<% } %>
+<%- include('partials/footer.ejs'); -%>

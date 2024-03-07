@@ -1,0 +1,15 @@
+<div class="book">
+  <% if (locals.book) { %>
+  <a href="/<%-book.id-%>">
+    <img src="https://covers.openlibrary.org/b/olid/<%- book.olid -%>-M.jpg" alt="<%-book.olid-%>">
+    <h2><%- book.title + " by " + book.author -%></h2>
+  </a>
+  <div>Date Read: <%- book.date -%></div>
+  <div class="book-note">
+    <p>Notes: <%- book.note -%></p>
+  </div>
+  <div class="book-rating">
+    <p>Rating: <%- book.rating -%></p>
+  </div>
+  <% } %>
+</div>

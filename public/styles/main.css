@@ -1,0 +1,11 @@
+* {
+  background-color: cornsilk;
+}
+
+h1 {
+  text-align: center;
+}
+
+span {
+  display: flex;
+}
